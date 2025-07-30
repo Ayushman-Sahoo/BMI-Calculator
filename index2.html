@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive layout -->
+  <title>BMI Calculator</title> <!-- Page title -->
+  <link rel="stylesheet" href="style2.css"> <!-- External CSS link -->
+</head>
+<body>
+  <div class="container"> <!-- Wrapper for all content -->
+    <div class="heading">
+      <h1>BMI Calculator</h1> <!-- Heading title -->
+    </div>
+
+    <!-- Weight input field -->
+    <label for="weight">
+      Weight (in Kg)
+      <input type="number" id="weight" placeholder="Enter weight in kg" required/>
+    </label>
+
+    <!-- Height input field -->
+    <label for="height">
+      Height (in cm)
+      <input type="number" id="height" placeholder="Enter height in cm" required/>
+    </label>
+
+    <!-- Calculate button -->
+    <div class="button">
+      <button id="calculateBtn">Calculate BMI</button>
+    </div>
+
+    <!-- Reset button -->
+    <div class="button" style="margin-top: 0.5rem;">
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- Result paragraph -->
+    <div class="para">
+      <p id="p">Your BMI :-</p>
+    </div>
+
+    <!-- Category result -->
+    <div class="show">
+      <p id="show"></p>
+    </div>
+
+    <!-- BMI Categories Table -->
+    <div class="bmi-table">
+      <h2>BMI Categories</h2>
+      <ul>
+        <li><span style="color: yellow;">Underweight:</span> BMI &le; 18.5</li>
+        <li><span style="color: green;">Normal:</span> 18.5 &lt; BMI &le; 24.9</li>
+        <li><span style="color: orange;">Overweight:</span> 24.9 &lt; BMI &le; 29.9</li>
+        <li><span style="color: red;">Obese:</span> BMI &ge; 30</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
